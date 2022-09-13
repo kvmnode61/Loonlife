@@ -1,7 +1,7 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: LoonLife 
+name: Deployment
 
-on: ubuntu-latest
+on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["Resources"]
@@ -22,10 +22,10 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy: LoonLife
+  deploy: 
     environment: production 
-      name: LoonLife 
-      url: ${{ kvmnode61.github.io/LoonLife }}
+      name: Deploy
+      url: ${( https://github.com }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
